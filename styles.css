@@ -1,0 +1,247 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 55px;
+}
+.navbar .navbar-brand img {
+  width: 120px;
+  height: auto;
+}
+.navbar .nav-link {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar .nav-link:hover {
+  color: #ff2350;
+}
+
+.hero-carousel-item {
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* Caption Styling */
+}
+.hero-carousel-item::before {
+  content: "";
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-carousel-item .image {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  height: 100vh;
+  border-bottom: 5px solid black;
+}
+.hero-carousel-item .carousel-caption {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.hero-carousel-item .carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.hero-carousel-item .carousel-caption p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.hero-carousel-item .carousel-caption button {
+  margin: 10px;
+}
+
+.part4 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.part4 .image img {
+  width: 100%;
+}
+.part4 .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.part4 .text button {
+  margin-top: 20px;
+}
+
+.part5 .row {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+}
+.part5 .image-container {
+  position: relative;
+  flex-grow: 1;
+  height: 720px;
+}
+.part5 .image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.part5 .image-container .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.part5 .image-container .text-overlay h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.part5 .image-container .text-overlay p {
+  font-size: 1.25rem;
+}
+.part5 .image-container .text-overlay a {
+  margin-top: 1rem;
+}
+
+.part6 {
+  background-color: black;
+  color: white;
+}
+.part6 .heading {
+  margin-top: 10px;
+  display: inline-block;
+}
+.part6 a {
+  color: white;
+  text-decoration: none;
+}
+.part6 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h5.heading {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+h5.heading .plus-icon {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.collapse {
+  display: none !important;
+  margin-top: 10px;
+}
+
+.plus-icon {
+  display: inline;
+}
+
+@media (max-width: 991px) {
+  .plus-icon {
+    display: inline-block;
+  }
+  .collapse {
+    display: none !important;
+  }
+  .collapse.show {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) {
+  .plus-icon {
+    display: none;
+  }
+  .collapse {
+    display: block !important;
+  }
+}
+@media (max-width: 768px) {
+  .col-md-2 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+/* Footer Styling */
+.footer {
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+.social-icons a {
+  margin-top: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons i {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.app-buttons a {
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+.app-buttons img {
+  width: 140px;
+  height: 40px;
+}
+
+.search-bar {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 70%;
+  padding: 5px;
+  margin-right: 0;
+}
+
+.search-bar button {
+  background-color: yellow;
+  border: none;
+  padding: 0 20px;
+  position: relative;
+  width: 30%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar button::after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}/*# sourceMappingURL=styles.css.map */
